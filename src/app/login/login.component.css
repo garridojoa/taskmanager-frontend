@@ -1,0 +1,49 @@
+/* app/styles.css */
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #ecf0f3;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.custom-form {
+  min-width: 200px;
+  max-width: 40%;
+  margin: 0px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+  margin: auto;
+  border-radius: 2.5rem;
+  background-color: #ecf0f3;
+  color: black;
+  margin-top: 5rem;
+}
+.custom-form input {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border: 0 none;
+  background: #ebf5fc;
+}
+.custom-form button {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: none;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #bcd8c1;
+  width: 100%;
+  display: block;
+  padding: 0.875rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}

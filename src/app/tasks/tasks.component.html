@@ -1,0 +1,22 @@
+
+<div>
+  <label>Task description:<input #taskDesc /></label>
+  <label>Completion Date:<input #complDate placeholder="yyyy-mm-dd" /></label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(taskDesc.value, complDate.value); taskDesc.value=''; complDate.value=''">
+    Add
+  </button>
+</div>
+
+<h2>My Tasks</h2>
+  <ul class="tasks">
+  
+  <p *ngIf="tasks.length
+   == 0">You did not create tasks yet.</p>
+  <li *ngFor="let task of tasks">
+	<a routerLink="/detail/{{task.taskId}}">
+      <span class="badge">{{task.taskId}}</span> {{task.description}}
+    </a>
+  </li>
+</ul>
+ 
